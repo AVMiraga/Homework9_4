@@ -9,77 +9,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAppRelation
 build_property.RootNamespace = WebAppRelation
-build_property.ProjectDir = C:\Users\II novbe\Desktop\WebAppRelation\WebAppRelation\
+build_property.ProjectDir = C:\Users\User\Desktop\Homeworks\Homework9_4\WebAppRelation\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\II novbe\Desktop\WebAppRelation\WebAppRelation
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\Homeworks\Homework9_4\WebAppRelation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Admin/Index.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xBZG1pblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/BookImages/Table.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/BookImages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCb29rSW1hZ2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/BookImages/Table.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCb29rSW1hZ2VzXFRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Book/Create.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/BookImages/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCb29rSW1hZ2VzXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCb29rXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Book/Table.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Book/Table.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCb29rXFRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Brand/Create.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Book/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCb29rXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Brand/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCcmFuZFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Brand/Table.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Brand/Table.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xCcmFuZFxUYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Category/Create.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Category/Table.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Category/Table.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xDYXRlZ29yeVxUYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/Shared/_Layout.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/_ViewImports.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Areas/AdminPanel/Views/_ViewStart.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Areas/AdminPanel/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Views/Blog/Blog.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Views/Blog/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Views/Home/Home.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Views/Shop/Shop.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Views/Shop/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Views/_ViewImports.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Views/_ViewStart.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/II novbe/Desktop/WebAppRelation/WebAppRelation/Views/Shared/_Layout.cshtml]
+[C:/Users/User/Desktop/Homeworks/Homework9_4/WebAppRelation/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z5zf723r68

@@ -38,10 +38,10 @@
                                     CreatedDate
                                 </th>
                                 <th>
-                                    CategoryId
+                                    Category
                                 </th>
                                 <th>
-                                    BrandId
+                                    Brand
                                 </th>
                             </tr>
                         </thead>
@@ -79,10 +79,18 @@
                                         @item.CreatedDate
                                     </td>
                                     <td>
-                                        @item.Category.Id
+                                        @item.Category.Name
                                     </td>
                                     <td>
-                                        @item.Brand.Id
+                                        @item.Brand.Name
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <button asp-controller="Book" asp-action="Update" asp-route-id="@item.Id"
+                                                class="btn btn-outline-warning">Update</button>
+                                            <button asp-controller="Book" asp-action="Delete" asp-route-id="@item.Id"
+                                                class="btn btn-outline-danger">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                             }

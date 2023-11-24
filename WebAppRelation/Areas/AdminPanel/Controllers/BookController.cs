@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebAppRelation.Areas.AdminPanel.ViewModels;
+﻿using WebAppRelation.Areas.AdminPanel.ViewModels;
 
 namespace WebAppRelation.Areas.AdminPanel.Controllers
 {
@@ -21,36 +20,87 @@ namespace WebAppRelation.Areas.AdminPanel.Controllers
                 .ToList();
             return View(admin);
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["Categories"] = _db.Categories.ToList();
-            ViewData["Brands"] = _db.Brands.ToList();
+            ViewData["Categories"] = await _db.Categories.ToListAsync();
+            ViewData["Brands"] = await _db.Brands.ToListAsync();
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Book Book)
+        public async Task<IActionResult> Create(Book book)
         {
+            ViewData["Categories"] = await _db.Categories.ToListAsync();
+            ViewData["Brands"] = await _db.Brands.ToListAsync();
+
             if (!ModelState.IsValid)
             {
+                var errors = ModelState.SelectMany(x => x.Value.Errors.Select(p => p.ErrorMessage)).ToList();
                 return View();
             }
 
-            _db.Books.Add(Book);
+            if (await _db.Books.AnyAsync(x => x.Title == book.Title))
+            {
+                ModelState.AddModelError("Title", "Book already exist");
+                return View();
+            }
+
+            if (await _db.Books.AnyAsync(x => x.BookCode == book.BookCode))
+            {
+                ModelState.AddModelError("BookCode", "Book already exist");
+                return View();
+            }
+
+            book.Category = await _db.Categories.FindAsync(book.CategoryId);
+            book.Brand = await _db.Brands.FindAsync(book.BrandId);
+
+            _db.Books.AddAsync(book);
             _db.SaveChanges();
             return RedirectToAction("Table");
         }
-        public IActionResult Update(int Id)
+        public async Task<IActionResult> Update(int Id)
         {
-            return View();
+            ViewData["Categories"] = await _db.Categories.ToListAsync();
+            ViewData["Brands"] = await _db.Brands.ToListAsync();
+
+            return View(await _db.Books.FindAsync(Id));
         }
         [HttpPost]
-        public IActionResult Update(Book Book)
+        public async Task<IActionResult> Update(Book Book)
         {
-            return View();
+            ViewData["Categories"] = await _db.Categories.ToListAsync();
+            ViewData["Brands"] = await _db.Brands.ToListAsync();
+
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.SelectMany(x => x.Value.Errors.Select(p => p.ErrorMessage)).ToList();
+                return View();
+            }
+
+            if (await _db.Books.AnyAsync(x => x.Title == Book.Title && x.Id != Book.Id))
+            {
+                ModelState.AddModelError("Title", "Book already exist");
+                return View();
+            }
+
+            if (await _db.Books.AnyAsync(x => x.BookCode == Book.BookCode && x.Id != Book.Id))
+            {
+                ModelState.AddModelError("BookCode", "Book already exist");
+                return View();
+            }
+
+            Book.Category = await _db.Categories.FindAsync(Book.CategoryId);
+            Book.Brand = await _db.Brands.FindAsync(Book.BrandId);
+
+            _db.Books.Update(Book);
+            _db.SaveChanges();
+
+            return RedirectToAction("Table");
         }
-        public IActionResult Delete(Book Book)
+        public IActionResult Delete(int id)
         {
-            return View();
+            _db.Books.Remove(_db.Books.Find(id));
+            _db.SaveChanges();
+            return RedirectToAction("Table");
         }
 
     }

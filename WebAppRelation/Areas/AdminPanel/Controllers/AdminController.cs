@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebAppRelation.Areas.AdminPanel.ViewModels;
-
-namespace WebAppRelation.Areas.AdminPanel.Controllers
+﻿namespace WebAppRelation.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
     public class AdminController : Controller

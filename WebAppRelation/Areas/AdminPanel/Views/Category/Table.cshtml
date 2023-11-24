@@ -46,7 +46,14 @@
                                         @item.Name
                                     </td>
                                     <td>
-                                        @item.ParentCategoryId
+                                        @if (item.ParentCategoryId == null)
+                                        {
+                                            @:Parent
+                                        }
+                                        else
+                                        {
+                                            @Model.Categories.FirstOrDefault(x => x.Id == item.ParentCategoryId).Name
+                                        }
                                     </td>
                                 </tr>
                             }

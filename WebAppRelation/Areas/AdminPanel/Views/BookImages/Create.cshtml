@@ -1,0 +1,31 @@
+@model BookImages
+
+<div class="container">
+    <div class="col-12 grid-margin stretch-card mb-5 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Book Image Section</h4>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="ImageFile" class="form-label">Image File</label>
+                        <input asp-for="ImageFile" class="form-control">
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="BookId">Book</label>
+                        <select asp-for="BookId" class="form-select">
+                            <option value="null">Choose Book</option>
+                            @foreach (var book in ViewData["Books"] as List<Book>)
+                            {
+                                <option value="@book.Id">@book.Title</option>
+                            }
+                        </select>
+                        <span asp-validation-for="BookId" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button class="btn btn-light" asp-controller="Book" asp-action="Table">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
